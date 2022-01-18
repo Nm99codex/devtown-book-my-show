@@ -10,12 +10,12 @@ export const signIn = (userData) => async (dispatch) => {
   try {
     const User = await axios({
       method: "POST",
-      url: `http://localhost:5001/auth/signin`,
+      url: `https://bms-devtown.herokuapp.com/auth/signin`,
       data: { credentials: userData },
     });
 
     localStorage.setItem(
-      "zomatoUser",
+      "bmsUser",
       JSON.stringify({ token: User.data.token })
     );
 
@@ -31,12 +31,12 @@ export const signUp = (userData) => async (dispatch) => {
   try {
     const User = await axios({
       method: "POST",
-      url: `http://localhost:5001/auth/signup`,
+      url: `https://bms-devtown.herokuapp.com/auth/signup`,
       data: { credentials: userData },
     });
 
     localStorage.setItem(
-      "zomatoUser",
+      "bmsUser",
       JSON.stringify({ token: User.data.token })
     );
 
@@ -50,7 +50,7 @@ export const signUp = (userData) => async (dispatch) => {
 
 export const signOut = () => async (dispatch) => {
   try {
-    localStorage.removeItem("zomatoUser");
+    localStorage.removeItem("bmsUser");
     clearUser();
     window.location.href = "http://localhost:3000/delivery";
 
@@ -62,7 +62,7 @@ export const signOut = () => async (dispatch) => {
 
 export const googleAuth = (token) => async (dispatch) => {
   try {
-    localStorage.setItem("zomatoUser", JSON.stringify({ token }));
+    localStorage.setItem("bmsUser", JSON.stringify({ token }));
 
     return dispatch({ type: GOOGLE_AUTH, payload: {} });
   } catch (error) {

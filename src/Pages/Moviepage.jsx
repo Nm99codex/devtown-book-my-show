@@ -20,40 +20,6 @@ import { getmovies } from '../redux/reducers/movies/movies.action';
 
 function Moviepage() {
 
-    // const reduxStateCart = useSelector((globalState) => globalState.cart.cart);
-    // const reduxStateUser = useSelector(
-    //     (globalState) => globalState.user.user.user
-    // );
-
-    const payNow = () => {
-        let options = {
-            key: "rzp_test_4eVpNXfCd8V6jV",
-            amount:
-                400,
-            currency: "INR",
-            name: "Zomato Master",
-            description: "Fast Delivery Service",
-            image:
-                "https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png",
-            handler: (data) => {
-                alert("Payment Successful");
-                console.log(data);
-            },
-            prefill: {
-                name: "hgh",
-                email: "jhghjghj",
-            },
-            theme: {
-                color: "#e23744",
-            },
-        };
-
-        const razorPay = new window.Razorpay(options);
-        razorPay.open();
-    };
-
-
-
     const cast = [
         "https://th.bing.com/th/id/R.7b528d6309ee84dc0d8fbffef7cc9347?rik=o5c5sfAZyc8IYg&riu=http%3a%2f%2fwww.newdesignfile.com%2fpostpic%2f2009%2f11%2fuser-icon_291700.jpg&ehk=fHg%2b5OocbzHvhnd4uHQgbLbzHw7cwTG4GXD1aIrXnts%3d&risl=&pid=ImgRaw&r=0",
         "https://th.bing.com/th/id/R.7b528d6309ee84dc0d8fbffef7cc9347?rik=o5c5sfAZyc8IYg&riu=http%3a%2f%2fwww.newdesignfile.com%2fpostpic%2f2009%2f11%2fuser-icon_291700.jpg&ehk=fHg%2b5OocbzHvhnd4uHQgbLbzHw7cwTG4GXD1aIrXnts%3d&risl=&pid=ImgRaw&r=0",
@@ -124,6 +90,37 @@ function Moviepage() {
         console.log(store)
         return store.movies.movies;
     })
+
+    const reduxStateUser = useSelector(
+        (globalState) => globalState.user.user.user
+        );
+        console.log(reduxStateUser)
+
+    const payNow = () => {
+        let options = {
+            key: "rzp_test_4eVpNXfCd8V6jV",
+            amount:(Number(details.Cost))*100,
+            currency: "INR",
+            name: "Book My show",
+            description: "Movie service",
+            image:
+                "https://pbs.twimg.com/profile_images/1084718695836987392/pT8dY4C-_400x400.jpg",
+            handler: (data) => {
+                alert("Payment Successful");
+                console.log(data);
+            },
+            prefill: {
+                name: "jhjh",
+                email: "hfhgh",
+            },
+            theme: {
+                color: "#e23744",
+            },
+        };
+
+        const razorPay = new window.Razorpay(options);
+        razorPay.open();
+    }
 
     return (
         <>

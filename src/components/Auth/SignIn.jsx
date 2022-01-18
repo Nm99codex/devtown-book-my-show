@@ -29,7 +29,7 @@ function Signin({ isOpen, setIsOpen }) {
   };
 
   const googleSignIn = () =>
-    (window.location.href = "http://localhost:5001/auth/google");
+    (window.location.href = "https://bms-devtown.herokuapp.com/auth/google");
 
   return (
     <>

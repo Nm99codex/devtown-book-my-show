@@ -7,7 +7,7 @@ export const getUser = (_id) => async (dispatch) => {
   try {
     const User = await axios({
       method: "GET",
-      url: `http://localhost:5001/user/${_id}`,
+      url: `https://bms-devtown.herokuapp.com/user/${_id}`,
     });
 
     return dispatch({ type: GET_USER, payload: User.data });
@@ -20,7 +20,7 @@ export const getMySelf = () => async (dispatch) => {
   try {
     const User = await axios({
       method: "GET",
-      url: `http://localhost:5001/user/`,
+      url: `https://bms-devtown.herokuapp.com/user/`,
     });
 
     return dispatch({ type: SELF, payload: User.data });
