@@ -46,7 +46,7 @@ function HomePage() {
         slidesToScroll: 1,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
-        centerPadding: "10px",
+        centerPadding: "5px",
         responsive: [
             {
                 breakpoint: 1024, 
@@ -75,7 +75,7 @@ function HomePage() {
             <div className=' text-2xl font-bold pt-3 pb-3'>
                 Recommended Movies
             </div>
-            <div className='flex justify-between pb-1 lg:px-8'>
+            <div className='flex justify-between pb-1 lg:px-8 sm:px-1 sm:over'>
                 {reduxState.map((reduxState) => {
                     return <MovieCard  {...reduxState} key={reduxState._id} />
                 })}
