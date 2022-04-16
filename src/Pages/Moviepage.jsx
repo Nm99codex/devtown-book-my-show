@@ -110,8 +110,8 @@ function Moviepage() {
                 console.log(data);
             },
             prefill: {
-                name: "jhjh",
-                email: "hfhgh",
+                name: "Nikhil",
+                email: "user@email.com",
             },
             theme: {
                 color: "#e23744",
