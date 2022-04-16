@@ -20,20 +20,20 @@ function HomePage() {
             image: "https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00122532-rvwldkjbqk-portrait.jpg"
         },
         {
-            title: "Fast 9",
-            image: "https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00056556-zftjbeevvq-portrait.jpg"
+            title: "KGF : Chapter 2",
+            image: "https://www.filmibeat.com/fanimg/movie/18384/kgf-chapter-2-photos-images-65910.jpg"
         },
         {
             title: "Dune",
             image: "https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00122526-xavthzuprr-portrait.jpg"
         },
         {
-            title: "Shane",
-            image: "https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00318498-dsrcdelzuj-portrait.jpg"
+            title: "Doctor Strange in the Multiverse of Madness",
+            image: "https://i.redd.it/mra7834mplf51.jpg"
         },
         {
-            title: "GhostBusters",
-            image: "https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00119705-bvpfcjxsyv-portrait.jpg"
+            title: "Fantastic Beasts: The Secrets of Dumbledore",
+            image: "https://th.bing.com/th/id/OIP.7hikwXG5s1LKniy9glmhIwHaLH?pid=ImgDet&rs=1"
         }
     ]
 
