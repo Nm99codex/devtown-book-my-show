@@ -98,7 +98,7 @@ function Moviepage() {
 
     const payNow = () => {
         let options = {
-            key: "rzp_test_4eVpNXfCd8V6jV",
+            key: "rzp_test_gi08PYgf5s4S6R",
             amount:(Number(details.Cost))*100,
             currency: "INR",
             name: "Book My show",
